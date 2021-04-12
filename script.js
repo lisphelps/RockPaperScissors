@@ -17,7 +17,7 @@ c = 0;
 
 //Initialize Game
 playButton.addEventListener('click', e => {
-    e.target.style = "display: none;",
+    e.target.style = "display: none",
     matchDiv.style = "display: block"
 })
 
@@ -53,22 +53,19 @@ function compChooses(playerChoice) {
 
 // The Big Showdown
 function playMatch(playerChoice, compChoice) {
-    console.log("comp chooses " + compChoice);
-    console.log("player chooses " + playerChoice);
  if(playerChoice == compChoice) {
-    prompt.innerText = "It's A Tie!"
+    prompt.innerText = "It's A Tie!";
+    options.style = "display: none";
     setTimeout(resetPrompt, 1500);
  } else if (playerChoice == "rock" && compChoice == "scissors" || playerChoice == "scissors" && compChoice == "paper" || playerChoice == "paper" && compChoice == "rock") {
             prompt.innerText = "You Win!";
             setTimeout(resetPrompt, 1500);
             p++;
             playerScore.innerText = p;
-            console.log("Player Score is " + p)
         } else {
             prompt.innerText = "Computer Wins";
             setTimeout(resetPrompt, 1500)
             c++;
-            console.log("Comp Score is " + c)
             computerScore.innerText = c;
         }
     }
