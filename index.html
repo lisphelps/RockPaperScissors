@@ -10,41 +10,42 @@
     
 </head>
 <body>
+    <script src="script.js" async defer></script>
     <section class="game">
         <div class="score_board">
             <div>
                 <h2>Player</h2>
-                <p class="player_score">0</p>
+                <p class="player_score" id="pscore">0</p>
             </div>
             <div>
                 <h2>CPU</h2>
-                <p class="computer_score">0</p>
+                <p class="computer_score" id="cscore">0</p>
             </div>
         </div>
         
         <div id="introDiv" class="intro">
             <h1>Rock Paper Scissors</h1>
+            <br><br>
             <button id="playButton">Let's Play!</button>
-        </div>
-
-        <div id="matchDiv" style="display: none;" class="match">
-            <h2 class="option-prompt">Choose an option</h2>
+        </div><br>
+        <div id="matchDiv" class="match">
+            <br>
             <div class="hands">
                 <img class="player_hand" id="playerHand" src="./assets/rock.png" alt="">
                 <img class="comp_hand" id="compHand" src="./assets/rock.png" alt="">
             </div>
+            <h2 class="prompt" id="prompt">Choose an Option</h2><br>
             <div class="options">
-                <button class="rock" onclick="playMatch(event)">Rock</button>
-                <button class="paper" onclick="playMatch(event)">Paper</button>
-                <button class="scissors" onclick="playMatch(event)">Scissors</button>
-            </div>
-            <div class="options" style="margin-top:40px;">
+                <button class="rock" id="rock">Rock</button>
+                <button class="paper" id="paper">Paper</button>
+                <button class="scissors" id="scissors">Scissors</button>
+            </div><br>
+            <div class="options" style="margin-top:10px;">
                  <button class="reset" onclick="reset()">Reset</button>
             </div>
-            
            
         </div>
     </section>
-    <script src="script.js"></script>
+    <div id="footer"><p><a href="https://www.vecteezy.com/free-vector/cloud">Cloud Vectors by Vecteezy</a></p></div>
 </body>
 </html>

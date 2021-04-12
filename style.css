@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("/assets/clouds.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 section{
+    font-family: 'Train One', cursive;
     height: 100vh;
-    background-color: red; 
-    font-family: 'DotGothic16', sans-serif;
+    position: fixed;
+    left: 25%;
+    right: 25%;
 }
 
 .score_board{
-    color: white;
+    color: #ffbb00;
+    text-shadow: 1px 1px #3f2e00;
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -29,17 +41,19 @@ section{
 }
 
 .intro{
-    color: white;
-    height: 50vh;
+    color: #ffbb00;
+    text-shadow: 1px 1px #3f2e00;
+    height: 40vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     transition: opacity ease 0.5s;
+    align-content: center;
 }
 
 .intro h1{
-    font-size: 3rem;
+    text-align: center;
+    font-size: 40px;
 }
 
 .intro button, .match button{
@@ -50,30 +64,48 @@ section{
     border-radius: 100px;
     color: white;
     font-size: 1.1rem;
-    background-color: #0000CC;
+    font-family: cursive;
+    background-color: #ff0088;
     cursor: pointer;
+    margin: 2px;
 }
 
 .match{
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease 0.5s;
+    padding-bottom: 2px;
+    background-color: rgb(255, 255, 255, 0);
+    display: none;
 }
 
-.option-prompt{
+
+.prompt{
     color: white;
     text-align: center;
-    font-size: 3.1rem;
+    font-size: 30px;
+    text-shadow: 2px 2px #3f2e00;
 }
 
 .hands, .options{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 7px;
+    background-color: rgb(255, 255, 255, 0);
 }
 
 .player_hand{
     transform: rotateY(180deg);
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.comp_hand{
+    background-color: rgb(255, 255, 255, 0);
+}
+
+#footer {
+    height: 2vh;
+    position: absolute;
+    bottom: 5px;
 }
