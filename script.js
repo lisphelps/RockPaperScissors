@@ -56,7 +56,9 @@ function playMatch(playerChoice, compChoice) {
  if(playerChoice == compChoice) {
     prompt.innerText = "It's A Tie!";
     setTimeout(resetPrompt, 1500);
- } else if (playerChoice == "rock" && compChoice == "scissors" || playerChoice == "scissors" && compChoice == "paper" || playerChoice == "paper" && compChoice == "rock") {
+ } else if (playerChoice == "rock" && compChoice == "scissors" || 
+            playerChoice == "scissors" && compChoice == "paper" || 
+            playerChoice == "paper" && compChoice == "rock") {
             prompt.innerText = "You Win!";
             setTimeout(resetPrompt, 1500);
             p++;
