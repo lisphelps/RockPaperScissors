@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url('/assets/clouds.jpg');
+    background-image: url('/assets/ithalu-dominguez-clouds.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-section{
+section {
     font-family: 'Train One', cursive;
     height: 100vh;
     position: fixed;
@@ -21,7 +21,7 @@ section{
     right: 25%;
 }
 
-.score_board{
+.score_board {
     color: #ffbb00;
     text-shadow: 1px 1px #3f2e00;
     height: 20vh;
@@ -30,17 +30,17 @@ section{
     align-items: center;
 }
 
-.score_board h2{
+.score_board h2 {
     font-size: 33px;
 }
 
-.score_board p{
+.score_board p {
     text-align: center;
     padding: 11px;
     font-size: 25px;
 }
 
-.intro{
+.intro {
     color: #ffbb00;
     text-shadow: 1px 1px #3f2e00;
     height: 40vh;
@@ -51,12 +51,13 @@ section{
     align-content: center;
 }
 
-.intro h1{
+.intro h1 {
     text-align: center;
     font-size: 40px;
 }
 
-.intro button, .match button{
+.intro button,
+.match button {
     width: 9rem;
     height: 3rem;
     background: none;
@@ -70,7 +71,7 @@ section{
     margin: 2px;
 }
 
-.match{
+.match {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -80,14 +81,15 @@ section{
 }
 
 
-.prompt{
+.prompt {
     color: white;
     text-align: center;
     font-size: 30px;
     text-shadow: 2px 2px #3f2e00;
 }
 
-.hands, .options{
+.hands,
+.options {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,12 +97,12 @@ section{
     background-color: rgb(255, 255, 255, 0);
 }
 
-.player_hand{
+.player_hand {
     transform: rotateY(180deg);
     background-color: rgb(255, 255, 255, 0);
 }
 
-.comp_hand{
+.comp_hand {
     background-color: rgb(255, 255, 255, 0);
 }
 
