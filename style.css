@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("/assets/clouds.jpg");
+    background-image: url('/assets/clouds.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
